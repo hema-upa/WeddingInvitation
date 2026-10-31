@@ -40,3 +40,88 @@ body{background-color:#2b1018;background-image:radial-gradient(ellipse at 50% 48
 .cover{transition:transform 1.15s cubic-bezier(.55,.02,.25,1),opacity .55s .25s!important}.invitation.is-open .cover{transform:translateY(-103%);opacity:0}.inside{transition:opacity .5s .25s,transform .4s .25s,clip-path 2.9s cubic-bezier(.35,.05,.18,1) .25s!important}.invitation.is-open .inside{clip-path:inset(0)}.scroll-rod-bottom{transition:top 2.9s cubic-bezier(.35,.05,.18,1) .25s!important}.invitation.is-open .scroll-rod-bottom{top:calc(100% - 34px)}
 .ganesha-art{display:block;width:90px;height:72px;margin:6px auto 10px;color:#922f38;overflow:visible;filter:drop-shadow(0 2px 1px #d2ad6c55)}.ganesha-art g{stroke-width:2}.ganesha-art .art-gold{stroke:#c28a38}.inside-header .ganesha-art{animation:ganesha-draw 1.2s .75s both}.invitation.is-open .event-row:nth-of-type(10){animation-delay:2.1s}@keyframes ganesha-draw{from{opacity:0;transform:translateY(7px) scale(.92)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.inside-header .ganesha-art{animation:none!important}}
+@media(max-width:600px){
+  html,body{min-height:100%;min-height:100svh}
+  body{display:block;padding:0;background:#541b2a}
+  .invitation{width:100%;height:100svh;min-height:100svh;max-height:100svh;border:0;border-radius:0;overflow-x:hidden;overflow-y:auto;box-shadow:none}
+  .cover{position:fixed;position:absolute;inset:0;height:100%;min-height:100svh}
+  .cover-content{width:100%;height:100%;min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:space-evenly;gap:0;padding:calc(18px + env(safe-area-inset-top)) 24px calc(48px + env(safe-area-inset-bottom))}
+  .garland-top{margin:0 auto 2px;font-size:18px}.ganesh{width:52px;height:52px;font-size:30px;margin:0 auto 2px}
+  .cover .invocation{margin:0;font-size:clamp(15px,4.1vw,18px)}.cover-rule{margin:3px auto;width:160px}
+  .cover .eyebrow{font-size:9px}.names{font-size:clamp(60px,18vw,76px);margin:4px 0;line-height:.76}.names small{font-size:17px;margin:9px}
+  .cover-note{font-size:clamp(15px,4.5vw,18px);margin:5px 0}.cover-date{margin:4px auto;font-size:18px}.cover-date span{font-size:25px}.opening-hint{font-size:13px;margin:2px 0}.garland-bottom{margin:4px auto 0;font-size:16px}
+  .cover-seal{bottom:calc(11px + env(safe-area-inset-bottom));width:30px;height:30px;font-size:12px}
+  .cover-sunburst{width:min(84vw,360px);height:min(84vw,360px)}.cover:before,.cover:after{width:230px;height:230px}
+}
+@media(max-width:600px) and (max-height:700px){.cover-content{padding-top:calc(10px + env(safe-area-inset-top));padding-bottom:calc(40px + env(safe-area-inset-bottom))}.garland-top{font-size:15px}.ganesh{width:43px;height:43px}.names{font-size:58px}.cover-date span{font-size:21px}.cover-note{font-size:14px}.garland-bottom{display:none}}
+@media(max-width:600px){.cover-content{justify-content:space-between;padding-top:calc(7px + env(safe-area-inset-top));padding-bottom:calc(35px + env(safe-area-inset-bottom))}.garland-top{margin-top:0}.garland-bottom{margin-bottom:0}.cover-seal{bottom:calc(7px + env(safe-area-inset-bottom))}}
+@media(max-width:600px){
+  .cover-content{position:absolute;inset:0;width:100%;height:100%;min-height:0;display:block;padding:0;}
+  .cover-content .garland-top{display:none}
+  .cover-content .ganesh{position:absolute;top:calc(20px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);margin:0;width:46px;height:46px}
+  .cover-content>.invocation{position:absolute;top:calc(78px + env(safe-area-inset-top));left:0;width:100%;margin:0}
+  .cover-content>.cover-rule{position:absolute;top:16%;left:50%;transform:translateX(-50%);margin:0;width:150px}
+  .cover-content>.eyebrow{position:absolute;top:21%;left:0;width:100%;font-size:9px}
+  .cover-content>.names{position:absolute;top:26%;left:0;width:100%;margin:0;font-size:clamp(61px,12.5svh,96px);line-height:.74}
+  .cover-content>.cover-note{position:absolute;top:55%;left:0;width:100%;margin:0;font-size:clamp(15px,4.4vw,18px)}
+  .cover-content>.cover-date{position:absolute;top:65%;left:50%;transform:translateX(-50%);margin:0}
+  .cover-content>.opening-hint{position:absolute;top:78%;left:0;width:100%;margin:0;font-size:13px}
+  .cover-content>.garland-bottom{position:absolute;bottom:calc(5% + env(safe-area-inset-bottom));left:0;width:100%;margin:0;font-size:16px}
+}
+@media(max-width:600px){
+  .cover{height:100dvh;min-height:100dvh}
+  .cover-content>.cover-rule{top:13%}
+  .cover-content>.eyebrow{top:17%}
+  .cover-content>.names{top:21%;font-size:clamp(58px,11.5svh,84px)}
+  .cover-content>.cover-note{top:51%}
+  .cover-content>.cover-date{top:61%}
+  .cover-content>.opening-hint{top:73%}
+  .inside{padding:25px 27px 24px}
+  .inside-header{padding:0 0 8px}
+  .inside-header .lotus{margin:3px auto}
+  .inside-header .ganesha-art{width:78px;height:49px;margin:1px auto 4px}
+  .inside h2.bride-parents{font-size:19px;line-height:1.05;margin:4px 0 6px}
+  .inside h2.bride-parents span{font-size:17px}
+  .inside-header .request{font-size:13px;line-height:1.22;margin:5px 0}
+  .inside-header .bride-name{font-size:43px;margin:2px 0}
+  .inside-header .grandparents{font-size:10px;line-height:1.2;margin:1px 0}
+  .inside-header .weds{font-size:16px;margin:1px 0 0}
+  .inside-header .couple.groom{font-size:38px;line-height:.9}
+  .inside-header .groom-parents{font-size:10px;margin:2px 0 4px}
+  .inside-header .programme-note{font-size:12px;margin:4px 0 1px}
+  .inside-header .mini-garland{margin-top:2px}
+}
+/* Keep the invitation cover composed for the portrait card at every viewport width. */
+.cover-content{position:absolute;inset:0;width:100%;height:100%;min-height:0;display:block;padding:0}
+.cover-content>.garland-top{display:none}
+.cover-content>.ganesh{position:absolute;top:calc(20px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);margin:0;width:46px;height:46px}
+.cover-content>.invocation{position:absolute;top:calc(78px + env(safe-area-inset-top));left:0;width:100%;margin:0}
+.cover-content>.cover-rule{position:absolute;top:16%;left:50%;transform:translateX(-50%);margin:0;width:150px}
+.cover-content>.eyebrow{position:absolute;top:21%;left:0;width:100%;font-size:9px}
+.cover-content>.names{position:absolute;top:26%;left:0;width:100%;margin:0;font-size:clamp(58px,11.5svh,88px);line-height:.74}
+.cover-content>.cover-note{position:absolute;top:55%;left:0;width:100%;margin:0;font-size:clamp(15px,4.2vw,18px)}
+.cover-content>.cover-date{position:absolute;top:65%;left:50%;transform:translateX(-50%);margin:0}
+.cover-content>.opening-hint{position:absolute;top:77%;left:0;width:100%;margin:0;font-size:13px}
+.cover-content>.garland-bottom{position:absolute;bottom:calc(5% + env(safe-area-inset-bottom));left:0;width:100%;margin:0;font-size:16px}
+@media(max-width:600px){
+  .invitation{height:min(100svh,620px);min-height:min(100svh,620px);max-height:min(100svh,620px);margin:max(0px,calc((100svh - 620px)/2)) auto}
+  .cover{height:100%;min-height:0}
+  .cover-content>.cover-rule{top:17%}
+  .cover-content>.eyebrow{top:19%}
+  .cover-content>.names{top:22%;font-size:clamp(56px,10.5svh,78px)}
+  .cover-content>.cover-note{top:48%}
+  .cover-content>.cover-date{top:56%}
+  .cover-content>.opening-hint{top:64%}
+  .cover-content>.garland-bottom{bottom:18%}
+}
+.invitation{height:100dvh;min-height:100dvh;max-height:100dvh;margin:0 auto}
+.cover{height:100%;min-height:100dvh}
+.cover-content>.cover-rule{top:17%}
+.cover-content>.eyebrow{top:19%}
+.cover-content>.names{top:24%;font-size:clamp(60px,11.5svh,88px)}
+.cover-content>.cover-note{top:50%}
+.cover-content>.cover-date{top:59%}
+.cover-content>.opening-hint{top:68%}
+.cover-content>.garland-bottom{bottom:20%}
+.cover-seal{display:flex;align-items:center;justify-content:center;gap:1px;font-size:12px;white-space:nowrap}.cover-seal b{font:600 11px "Cormorant Garamond",serif;color:inherit}.cover-seal span{position:static;left:auto;top:auto;transform:none;padding:0;background:transparent;color:#f1c56b;font-size:8px;line-height:1}
+html,body{height:100%;overflow:hidden}.invitation{overflow:hidden}.invitation.is-open{overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}.invitation.is-open::-webkit-scrollbar{display:none}
