@@ -125,3 +125,5 @@ body{background-color:#2b1018;background-image:radial-gradient(ellipse at 50% 48
 .cover-content>.garland-bottom{bottom:20%}
 .cover-seal{display:flex;align-items:center;justify-content:center;gap:1px;font-size:12px;white-space:nowrap}.cover-seal b{font:600 11px "Cormorant Garamond",serif;color:inherit}.cover-seal span{position:static;left:auto;top:auto;transform:none;padding:0;background:transparent;color:#f1c56b;font-size:8px;line-height:1}
 html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}.invitation{height:100svh;min-height:100svh;max-height:none;overflow:hidden}.invitation.is-open{height:auto;min-height:100svh;max-height:none;overflow:visible}.invitation.is-open .cover{height:100svh;min-height:100svh}
+@media(max-width:600px){.inside{padding-top:76px}}
+.inside>.replay{position:relative;z-index:5;display:block;margin:16px auto 34px;padding:8px 15px;border:1px solid #bd9555;border-radius:18px;background:#fff8e8;color:#812631;font-size:10px;letter-spacing:.04em}
