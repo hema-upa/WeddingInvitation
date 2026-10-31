@@ -127,3 +127,4 @@ body{background-color:#2b1018;background-image:radial-gradient(ellipse at 50% 48
 html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}.invitation{height:100svh;min-height:100svh;max-height:none;overflow:hidden}.invitation.is-open{height:auto;min-height:100svh;max-height:none;overflow:visible}.invitation.is-open .cover{height:100svh;min-height:100svh}
 @media(max-width:600px){.inside{padding-top:76px}}
 .inside>.replay{position:relative;z-index:5;display:block;margin:16px auto 34px;padding:8px 15px;border:1px solid #bd9555;border-radius:18px;background:#fff8e8;color:#812631;font-size:10px;letter-spacing:.04em}
+.family-couplet{font-style:normal;line-height:1.55}.family-couplet span{font:italic 16px "Cormorant Garamond",serif;letter-spacing:.02em;color:#952d39}.family-couplet strong{display:inline-block;margin-top:5px;font:500 13px/1.5 "DM Sans",sans-serif;letter-spacing:.04em;color:#76252f}
